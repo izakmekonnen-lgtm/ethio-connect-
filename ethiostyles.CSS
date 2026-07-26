@@ -1,0 +1,174 @@
+/*  GOOGLE FONT  */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap');
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* ================= SMOOTH SCROLL ================= */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f0a500 !important;
+}
+
+/* ================= HERO ================= */
+.hero {
+    background: radial-gradient(circle at top left, #0f2a4a 0%, #061020 75%);
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.hero h1 {
+    text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.6);
+}
+
+.hero-stat {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 14px 8px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* ================= BUTTON OVERRIDES ================= */
+
+.btn {
+    border-radius: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-success {
+    background-color: #0f2a4a;
+    border-color: #0f2a4a;
+}
+
+.btn-success:hover {
+    background-color: #f0a500;
+    border-color: #f0a500;
+    color: #061020;
+    transform: scale(1.05);
+}
+
+.btn-outline-success {
+    color: #0f2a4a;
+    border-color: #0f2a4a;
+}
+
+.btn-outline-success:hover {
+    background-color: #0f2a4a;
+    border-color: #0f2a4a;
+    transform: scale(1.05);
+}
+
+.btn-outline-light:hover {
+    transform: scale(1.05);
+}
+
+/* ================= FEATURES ================= */
+.feature-card {
+    border-left: 4px solid #0f2a4a;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    border-left-color: #f0a500;
+}
+
+.feature-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #0f2a4a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+/* ================= STATS BAR ================= */
+.stats-bar {
+    background: linear-gradient(90deg, #061020, #0f2a4a);
+}
+
+.stat-box {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+@media (max-width: 767.98px) {
+    .stat-box {
+        border-right: none !important;
+    }
+}
+
+/* ================= TEAM ================= */
+.team-avatar {
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    border: 3px solid #f0a500;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-avatar {
+    transform: scale(1.1);
+}
+
+/* ================= PRICING ================= */
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    border-top: 4px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-6px);
+}
+
+.pricing-featured {
+    border-top-color: #f0a500;
+}
+
+/* ================= FAQ ================= */
+.accordion-button:not(.collapsed) {
+    background-color: #0f2a4a;
+    color: #fff;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* ================= CONTACT ================= */
+.form-floating > label {
+    color: #6c757d;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #061020;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #f0a500;
+}
